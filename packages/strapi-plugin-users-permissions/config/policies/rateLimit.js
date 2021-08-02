@@ -23,7 +23,7 @@ module.exports = async (ctx, next) => {
       {},
       {
         interval: 1 * 60 * 1000,
-        max: 5,
+        max: 0,
         prefixKey: `${ctx.request.path}:${ctx.request.ip}`,
         message,
       },
